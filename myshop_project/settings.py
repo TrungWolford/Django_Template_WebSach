@@ -79,8 +79,12 @@ WSGI_APPLICATION = "myshop_project.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "WebSach",       # 👈 tên database
+        "USER": "admin",       # 👈 username
+        "PASSWORD": "123",     # 👈 password
+        "HOST": "localhost",      # hoặc IP server PostgreSQL
+        "PORT": "5433",           # cổng mặc định PostgreSQL
     }
 }
 
